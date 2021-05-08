@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    
+    <head>
+        <meta charset='utf-8' />
+        <meta name='viewport' content="width=device-width, user-scalable=no" />
+    
+        <title>Piedra Papel Tijera</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="estiloPiedra.css" />
+    </head>
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="col-12 w-100 h-25 cabeza">
+                <h1 class="col-12 d-flex justify-content-center ">Piedra Papel  Tijera</h1>
+            </div>
+        </header>
+        <div class="row filaMarcadores"">
+            <div class="marcador col-3 w-100 h-100">
+                <h2 class=" d-flex justify-content-center ml-md-0 ml-4">Tú</h2>
+            </div>
+            <div class="marcador col-3 d-flex justify-content-start text-primary ml-md-0" >
+                <h2 id='pJugador'>0</h2>
+            </div>
+
+            <div class="marcador col-3 w-100 h-100">
+                <h2 class=" d-flex justify-content-center">CPU</h2>
+            </div>
+            <div class="marcador col-3 d-flex justify-content-start text-danger" >
+                <h2 id='pCPU'>0</h2>
+            </div>
+        </div>
+        <div class="row tableroGeneral">
+            <div id="tableroCPU" class="col-12 d-flex justify-content-center">
+                <span id= 'bonus1' class=" col-4"></span>
+                <span id="imagenCPU" class="col-4"></span>
+                    <span id= 'bonus2' class="col-4"></span><!--SOLO PARA CENTRAR NO CONTIENE NADA-->
+            </div>
+            <div id="tableroJugador" class="col-12 d-flex justify-content-center">
+                <img id="Piedra" class="imagenJugador col-4"src="img/piedra.png" onclick="selectPiedra()">
+                <img id="Papel" class="imagenJugador col-4" src="img/papel.png" onclick="selectPapel()">
+                <img id="Tijera" class="imagenJugador col-4" src="img/tijera.png" onclick="selectTijera()">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</body>
+</html>
